@@ -1,13 +1,13 @@
-import { ChainId } from '@cheeseswap/cheeseswap-sdk'
+import { ChainId } from '@quasarchain/cheeseswap-sdk'
 import { FortmaticConnector as FortmaticConnectorCore } from '@web3-react/fortmatic-connector'
 
 export const OVERLAY_READY = 'OVERLAY_READY'
 
-type FormaticSupportedChains = Extract<ChainId, ChainId.MAINNET | ChainId.BSCTESTNET>
+type FormaticSupportedChains = Extract<ChainId, ChainId.MAINNET | ChainId.QSRTESTNET>
 
 const CHAIN_ID_NETWORK_ARGUMENT: { readonly [chainId in FormaticSupportedChains]: string | undefined } = {
   [ChainId.MAINNET]: undefined,
-  [ChainId.BSCTESTNET]: 'Bsc-testnet'
+  [ChainId.QSRTESTNET]: 'Bsc-testnet'
 }
 
 export class FortmaticConnector extends FortmaticConnectorCore {

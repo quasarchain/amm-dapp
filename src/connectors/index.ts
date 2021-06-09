@@ -6,7 +6,7 @@ import { PortisConnector } from '@web3-react/portis-connector'
 
 import { FortmaticConnector } from './Fortmatic'
 import { NetworkConnector } from './NetworkConnector'
-import { BscConnector } from './bsc/bscConnector'
+import { BscConnector } from './quasar/bscConnector'
 
 const NETWORK_URL = process.env.REACT_APP_NODE_1
 
@@ -29,10 +29,10 @@ export function getNetworkLibrary(): Web3Provider {
 }
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [56, 97]
+  supportedChainIds: [27, 28]
 })
 
-export const bsc = new BscConnector({ supportedChainIds: [56] })
+export const quasar = new BscConnector({ supportedChainIds: [27] })
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({

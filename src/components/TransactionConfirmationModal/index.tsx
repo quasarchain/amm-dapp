@@ -1,4 +1,4 @@
-import { ChainId } from '@cheeseswap/cheeseswap-sdk'
+import { ChainId } from '@quasarchain/cheeseswap-sdk'
 import React, { useContext } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import Modal from '../Modal'

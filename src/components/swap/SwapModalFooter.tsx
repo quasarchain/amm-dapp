@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@cheeseswap/cheeseswap-sdk'
+import { Trade, TradeType } from '@quasarchain/cheeseswap-sdk'
 import React, { useContext, useMemo, useState } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'

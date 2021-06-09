@@ -1,4 +1,4 @@
-import { JSBI, Token } from '@cheeseswap/cheeseswap-sdk'
+import { JSBI, Token } from '@quasarchain/cheeseswap-sdk'
 import React, { useCallback, useContext, useMemo, useState, useEffect } from 'react'
 import { ThemeContext } from 'styled-components'
 import { AutoColumn } from '../../components/Column'

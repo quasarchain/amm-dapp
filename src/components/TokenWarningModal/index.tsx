@@ -1,4 +1,4 @@
-import { Token } from '@cheeseswap/cheeseswap-sdk'
+import { Token } from '@quasarchain/cheeseswap-sdk'
 import { transparentize } from 'polished'
 import React, { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'
@@ -105,7 +105,7 @@ export default function TokenWarningModal({
             <TYPE.main color={'#e82020'}>Token imported</TYPE.main>
           </AutoRow>
           <TYPE.body color={'#e82020'}>
-            Anyone can create an BEP20 token on BSC with <em>any</em> name, including creating fake versions of
+            Anyone can create an BEP20 token on QUASAR with <em>any</em> name, including creating fake versions of
             existing tokens and tokens that claim to represent projects that do not have a token.
           </TYPE.body>
           <TYPE.body color={'#e82020'}>

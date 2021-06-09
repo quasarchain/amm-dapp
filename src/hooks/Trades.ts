@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Pair, Token, Trade } from '@cheeseswap/cheeseswap-sdk'
+import { Currency, CurrencyAmount, Pair, Token, Trade } from '@quasarchain/cheeseswap-sdk'
 import flatMap from 'lodash.flatmap'
 import { useMemo } from 'react'
 

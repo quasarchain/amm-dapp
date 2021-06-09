@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, ETHER, WETH } from '@cheeseswap/cheeseswap-sdk'
+import { Currency, currencyEquals, ETHER, WETH } from '@quasarchain/cheeseswap-sdk'
 import { useMemo } from 'react'
 import { tryParseAmount } from '../state/swap/hooks'
 import { useTransactionAdder } from '../state/transactions/hooks'

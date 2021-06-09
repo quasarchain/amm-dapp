@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@cheeseswap/cheeseswap-sdk'
+import { Token, TokenAmount } from '@quasarchain/cheeseswap-sdk'
 import { useMemo } from 'react'
 
 import { useTokenContract } from '../hooks/useContract'

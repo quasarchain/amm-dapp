@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from '@cheeseswap/cheeseswap-sdk'
+import { ChainId } from '@quasarchain/cheeseswap-sdk'
 
 export interface SerializableTransactionReceipt {
   to: string

@@ -89,7 +89,7 @@ export default function Footer() {
             <IconLink href="https://github.com/cheeseswapbsc/" target="_blank" rel="noopener noreferrer">
               <Icon src={Github} alt="Github" />
             </IconLink>
-            <IconLink href="mailto:info@cheeseswap.app" target="_blank" rel="noopener noreferrer">
+            <IconLink href="mailto:info@quasarchain.app" target="_blank" rel="noopener noreferrer">
               <Icon src={Mail} alt="Mail" />
             </IconLink>
           </SocialSection>
@@ -141,7 +141,7 @@ export default function Footer() {
       Partners
       </Title>
         <StyledAbsoluteLink href="https://keep3rb.network" target="_blank">
-          Keep3r BSC
+          Keep3r QUASAR
         </StyledAbsoluteLink>
         <StyledAbsoluteLink href="https://kiwiswap.finance" target="_blank" rel="noopener noreferrer">
           Kiwi Finance

@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@cheeseswap/cheeseswap-sdk'
+import { ChainId, Token } from '@quasarchain/cheeseswap-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
@@ -32,7 +32,7 @@ export type TokenAddressMap = Readonly<{ [chainId in ChainId]: Readonly<{ [token
  */
 const EMPTY_LIST: TokenAddressMap = {
   [ChainId.MAINNET]: {},
-  [ChainId.BSCTESTNET]: {}
+  [ChainId.QSRTESTNET]: {}
 }
 
 const listCache: WeakMap<TokenList, TokenAddressMap> | null =

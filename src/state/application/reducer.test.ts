@@ -1,4 +1,4 @@
-import { ChainId } from '@cheeseswap/cheeseswap-sdk'
+import { ChainId } from '@quasarchain/cheeseswap-sdk'
 import { createStore, Store } from 'redux'
 import { addPopup, removePopup, toggleSettingsMenu, toggleWalletModal, updateBlockNumber } from './actions'
 import reducer, { ApplicationState } from './reducer'

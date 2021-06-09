@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@cheeseswap/cheeseswap-sdk'
+import { Currency, ETHER, Token } from '@quasarchain/cheeseswap-sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'ETH'

@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from '@cheeseswap/cheeseswap-sdk'
+import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from '@quasarchain/cheeseswap-sdk'
 import { computeTradePriceBreakdown } from './prices'
 
 describe('prices', () => {

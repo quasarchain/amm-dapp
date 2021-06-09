@@ -1,4 +1,4 @@
-import { ChainId } from '@cheeseswap/cheeseswap-sdk'
+import { ChainId } from '@quasarchain/cheeseswap-sdk'
 import React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Text } from 'rebass'
@@ -130,7 +130,7 @@ const BalanceText = styled(Text)`
 
 const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
   [ChainId.MAINNET]: null,
-  [ChainId.BSCTESTNET]: 'Bsc-testnet'
+  [ChainId.QSRTESTNET]: 'Bsc-testnet'
 }
 
 export default function Header() {
@@ -162,7 +162,7 @@ export default function Header() {
             <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
               {account && userEthBalance ? (
                 <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={700}>
-                  {userEthBalance?.toSignificant(4)} BNB
+                  {userEthBalance?.toSignificant(4)} QSR
                 </BalanceText>
               ) : null}
               <Web3Status />

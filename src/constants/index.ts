@@ -1,10 +1,10 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@cheeseswap/cheeseswap-sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '@quasarchain/cheeseswap-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
-// import { bsc, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
-import { injected, bsc, walletconnect } from '../connectors'
+// import { quasar, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
+import { injected, quasar, walletconnect } from '../connectors'
 // TODO
-export const ROUTER_ADDRESS = '0x3047799262d8D2EF41eD2a222205968bC9B0d895'
+export const ROUTER_ADDRESS = '0xd4E362D5B0a1BC4A269168E64a85098d362cE2ab'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -20,7 +20,7 @@ export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]]
+  [ChainId.QSRTESTNET]: [WETH[ChainId.QSRTESTNET]]
 }
 
 // used to construct intermediary pairs for trading
@@ -55,7 +55,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
   [ChainId.MAINNET]: [
     [
       new Token(ChainId.MAINNET, '0xaDD8A06fd58761A5047426e160B2B88AD3B9D464', 18, 'CHS', 'Cheesemaker.farm'),
-      new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
+      new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WQSR', 'Wrapped QSR')
     ],
     [USDC, USDT],
     [DAI, USDT]
@@ -75,9 +75,9 @@ export interface WalletInfo {
 }
 
 export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
-  BSC: {
-    connector: bsc,
-    name: 'Binance Chain Wallet',
+  QUASAR: {
+    connector: quasar,
+    name: 'Quasar Chain Wallet',
     iconName: 'binance.svg',
     description: 'Easy-to-use browser extension.',
     href: null,

@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@cheeseswap/cheeseswap-sdk'
+import { Currency, ETHER, Token } from '@quasarchain/cheeseswap-sdk'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
