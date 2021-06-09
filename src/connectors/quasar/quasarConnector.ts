@@ -24,7 +24,7 @@ export class UserRejectedRequestError extends Error {
   }
 }
 
-export class BscConnector extends AbstractConnector {
+export class QuasarConnector extends AbstractConnector {
   constructor(kwargs: AbstractConnectorArguments) {
     super(kwargs)
 

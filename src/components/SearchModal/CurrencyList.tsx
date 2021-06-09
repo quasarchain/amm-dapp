@@ -203,7 +203,7 @@ export default function CurrencyList({
       width="100%"
       itemData={itemData}
       itemCount={itemData.length}
-      itemSize={56}
+      itemSize={27}
       itemKey={itemKey}
     >
       {Row}
